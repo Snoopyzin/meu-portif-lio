@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Alexandre - Portfólio</title>
+    <link rel="icon" type="image/x-icon" href="images/new-avatar.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="i18n.js"></script>
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav"> 
+            <div class="nav-content">
+                <div class="logo">
+                    <span>Gabriel Alexandre</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#sobre" data-i18n="nav.about">Sobre</a>
+                    <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+                    <a href="#contato" data-i18n="nav.contact">Contato</a>
+                    <a href="https://drive.google.com/file/d/10HhnmNh0NOGUZLbxD0M0uK2pv91Q1tEL/view?usp=sharing" target="_blank" class="curriculum-btn" data-i18n="nav.curriculum">Currículo</a>
+                </div>
+                <div class="nav-right">
+                    <div class="language-selector">
+                        <button class="lang-btn" data-lang="pt-BR" title="Português (Brasil)">
+                            🇧🇷
+                        </button>
+                        <button class="lang-btn" data-lang="es-ES" title="Español">
+                            🇪🇸
+                        </button>
+                        <button class="lang-btn" data-lang="en-US" title="English">
+                            🇺🇸
+                        </button>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gabriel-r%C3%AAgo-a630021ab/" target="_blank" class="icon-link" title="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Snoopyzin" target="_blank" class="icon-link" title="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-shapes">
+            <div class="organic-shape shape-1"></div>
+            <div class="organic-shape shape-2"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-avatar">
+                    <img src="images/new avatar.png" alt="Gabriel Alexandre Avatar" width="200" height="200">
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-greeting" data-i18n="hero.greeting">Ei, Eu sou</span>
+                    <span class="hero-name" data-i18n="hero.name">Gabriel Alexandre!</span>
+                </h1>
+            </div>
+            <div class="hero-right">
+                <div class="hero-photo-wrapper">
+                    <img src="images/sem fundo.png?v=2" alt="Gabriel Alexandre" class="hero-main-photo">
+                </div>
+                <div class="hero-signature">
+                    <svg viewBox="0 0 280 120" preserveAspectRatio="xMidYMid meet">
+                        <path d="M 20 60 Q 40 20, 70 60 Q 100 100, 130 50 Q 160 10, 190 70 Q 220 110, 260 40" 
+                              stroke="var(--primary)" 
+                              stroke-width="5" 
+                              fill="none" 
+                              stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-content">
+                <div class="companies">
+                    <div class="carousel-container">
+                        <div class="company-logos-track">
+                            <div class="company-logo">
+                                <img src="images/VOLMASTER 01.png" alt="Volmaster Tech">
+                            </div>
+                            <div class="company-logo">
+                                <img src="images/VOLMASTER 02.png" alt="Volmaster Tech Service">
+                            </div>
+                            <!-- Duplicados para loop infinito -->
+                            <div class="company-logo">
+                                <img src="images/VOLMASTER 01.png" alt="Volmaster Tech">
+                            </div>
+                            <div class="company-logo">
+                                <img src="images/VOLMASTER 02.png" alt="Volmaster Tech Service">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tech Badges -->
+                <div class="tech-badges">
+                    <div class="tech-badge" data-tech="html">
+                        <svg width="32" height="32" viewBox="0 0 32 32"><path fill="#e34f26" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30z"/><path fill="#ef652a" d="M16 27.858l8.17-2.265 1.922-21.532H16z"/><path fill="#ebebeb" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83.759 8.517H16zm0 8.027l-.014.004-3.442-.929-.22-2.465H9.221l.433 4.852 6.332 1.758.014-.004z"/><path fill="#fff" d="M15.989 13.407v3.091h3.806l-.358 4.009-3.448.93v3.216l6.337-1.757.046-.522.726-8.137.076-.83h-.833zm0-6.256v3.091h7.466l.062-.694.141-1.567.074-.83z"/></svg>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="tech-badge" data-tech="css">
+                        <img src="images/ico/css.png" alt="CSS3" width="48" height="48">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="tech-badge" data-tech="js">
+                        <img src="images/ico/javascript.png" alt="JavaScript" width="48" height="48">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech-badge" data-tech="react">
+                        <svg width="32" height="32" viewBox="0 0 32 32"><circle cx="16" cy="16" r="2.5" fill="#61dafb"/><g stroke="#61dafb" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2" cx="16" cy="16"/><ellipse rx="11" ry="4.2" cx="16" cy="16" transform="rotate(60 16 16)"/><ellipse rx="11" ry="4.2" cx="16" cy="16" transform="rotate(120 16 16)"/></g></svg>
+                        <span>React</span>
+                    </div>
+                    <div class="tech-badge" data-tech="node">
+                        <svg width="32" height="32" viewBox="0 0 32 32"><path fill="#83cd29" d="M16 2l-11 6.5v13L16 28l11-6.5v-13z"/><path fill="#404137" d="M16 2v26l11-6.5v-13z"/></svg>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech-badge" data-tech="python">
+                        <svg width="32" height="32" viewBox="0 0 32 32"><path fill="#3776ab" d="M15.885 2.1c-7.1 0-6.651 3.07-6.651 3.07v3.19h6.752v1h-9.441S2.545 8.8 2.545 16s4 7.1 4 7.1h2.391v-3.363s-.13-4 3.926-4h6.64s3.812.06 3.812-3.677v-6.263s.571-3.697-6.43-3.697zm-3.673 2.141a1.235 1.235 0 11-.003 2.47 1.235 1.235 0 01.003-2.47z"/><path fill="#ffd343" d="M16.115 29.9c7.1 0 6.651-3.07 6.651-3.07v-3.19h-6.751v-1h9.441s4-0.56 4-7.66-4-7.1-4-7.1h-2.391v3.363s.13 4-3.926 4h-6.64s-3.812-.06-3.812 3.677v6.263s-.571 3.697 6.43 3.697zm3.673-2.141a1.235 1.235 0 11.003-2.47 1.235 1.235 0 01-.003 2.47z"/></svg>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <p class="about-text" data-i18n="about.text">
+                    Olá! Eu sou Gabriel Alexandre, desenvolvedor fullstack e especialista em helpdesk, apaixonado por tecnologia e pela criação de soluções que realmente fazem a diferença no dia a dia das pessoas. Trabalho com desenvolvimento de aplicações web completas, atuando tanto no front-end quanto no back-end, além de fornecer suporte técnico especializado para empresas e clientes.
+                    <br><br>
+                    No desenvolvimento, utilizo tecnologias modernas como HTML, CSS, JavaScript, React, Node.js e bancos de dados para construir sistemas robustos, eficientes e escaláveis. No helpdesk, atuo resolvendo problemas técnicos, configurando sistemas, prestando consultoria e garantindo que tudo funcione perfeitamente. Minha experiência combina habilidades técnicas com comunicação clara, pois acredito que entender as necessidades do cliente é tão importante quanto escrever um bom código.
+                    <br><br>
+                    Estou sempre buscando evoluir, aprender novas tecnologias e enfrentar desafios que me permitam crescer profissionalmente. Se você precisa de um site, sistema personalizado ou suporte técnico de qualidade, vamos conversar!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Serviços Helpdesk</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="services.format.title">Formatação Remota de Windows</h3>
+                    <p data-i18n="services.format.desc">Formatação completa e reinstalação do Windows de forma remota, incluindo configuração de drivers e programas essenciais.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="services.support.title">Suporte Técnico Remoto</h3>
+                    <p data-i18n="services.support.desc">Resolução de problemas técnicos em tempo real, configuração de sistemas e assistência para usuários via acesso remoto.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="services.install.title">Instalação de Software</h3>
+                    <p data-i18n="services.install.desc">Instalação e configuração de softwares, aplicativos, ferramentas de produtividade e soluções corporativas.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="8.5" cy="7" r="4"></circle>
+                            <polyline points="17 11 19 13 23 9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="services.backup.title">Backup e Recuperação</h3>
+                    <p data-i18n="services.backup.desc">Backup seguro de dados importantes, recuperação de arquivos perdidos e estratégias de proteção de informações.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="services.maintenance.title">Manutenção Preventiva</h3>
+                    <p data-i18n="services.maintenance.desc">Otimização de desempenho, limpeza de sistema, atualização de drivers e manutenção periódica para evitar problemas.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                            <polyline points="17 2 12 7 7 2"></polyline>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="services.network.title">Configuração de Redes</h3>
+                    <p data-i18n="services.network.desc">Configuração e otimização de redes domésticas e empresariais, instalação de Wi-Fi e resolução de problemas de conectividade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projetos">
+        <div class="container">
+            <div class="projects-grid">
+                <article class="project-card featured" onclick="window.open('https://snoopyzin.github.io/pag-de-servi-os-volmaster/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/landing page.png" alt="Volmaster Landing Page">
+                    </div>
+                    <div class="project-footer">
+                        <span>Landing Page Volmaster →</span>
+                    </div>
+                </article>
+
+                <article class="project-card featured" onclick="window.open('https://snoopyzin.github.io/volmaster-tech/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/agenda.png" alt="Volmaster Tech - Agenda de Cursos">
+                    </div>
+                    <div class="project-footer">
+                        <span>Volmaster Tech - Agenda de Cursos →</span>
+                    </div>
+                </article>
+
+                <article class="project-card featured" onclick="window.open('https://snoopyzin.github.io/project-store/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/project store.png" alt="Project Store - E-commerce Moderno">
+                    </div>
+                    <div class="project-footer">
+                        <span>Project Store - E-commerce Moderno →</span>
+                    </div>
+                </article>
+
+                <article class="project-card featured" onclick="window.open('https://snoopyzin.github.io/curry-page/', '_blank')">
+                    <div class="project-image">
+                        <img src="images/curry page.png" alt="Curry Page - Landing Page">
+                    </div>
+                    <div class="project-footer">
+                        <span>Curry Page - Landing Page →</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title" data-i18n="faq.title">Perguntas frequentes</h2>
+            <div class="faq-list">
+                <div class="faq-item active">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q1">Quais serviços você oferece?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M5 9l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a1">Trabalho como desenvolvedor fullstack criando sites, sistemas web, landing pages e aplicações personalizadas do zero. Também atuo como helpdesk oferecendo suporte técnico, manutenção de sistemas, configuração de servidores, resolução de problemas e consultoria em TI. Se você precisa desenvolver algo novo ou resolver algum problema técnico, posso ajudar!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q2">Quais tecnologias você utiliza?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M5 9l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a2">No front-end trabalho com HTML5, CSS3, JavaScript, React e frameworks modernos para criar interfaces responsivas e interativas. No back-end uso Node.js, Express, Python e integração com APIs. Para bancos de dados, trabalho com MySQL, PostgreSQL e MongoDB. Também tenho experiência com Git, hospedagem, deploy e toda a infraestrutura necessária para colocar projetos no ar!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q3">Como funciona o suporte técnico (helpdesk)?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M5 9l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a3">Ofereço suporte remoto e presencial para resolver problemas técnicos, configurar sistemas, fazer manutenção preventiva, backup de dados e muito mais. Atendo tanto usuários finais quanto empresas que precisam de suporte contínuo. Trabalho por chamado, pacotes mensais ou contratos de manutenção. O objetivo é sempre deixar tudo funcionando perfeitamente para você focar no que importa!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span data-i18n="faq.q4">Como posso entrar em contato?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M5 9l7 7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq.a4">Você pode me chamar pelo WhatsApp, LinkedIn, e-mail ou preencher o formulário de contato aqui no site. Respondo rápido e estou sempre disponível para conversar sobre seu projeto ou necessidade. Vamos agendar uma conversa e descobrir como posso te ajudar!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contato">
+        <div class="contact-background"></div>
+        <div class="container">
+            <div class="contact-header">
+                <div class="contact-avatar">
+                    <img src="images/new avatar.png" alt="Gabriel Alexandre Avatar">
+                </div>
+                <h2 class="section-title" data-i18n="contact.title">Fale comigo</h2>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.about">Sobre</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Qual é a situação?" data-i18n="contact.subtitle" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" data-i18n="contact.emailPlaceholder" required>
+                    </div>
+                    <button type="submit" class="submit-btn" data-i18n="contact.submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text" data-i18n="footer.rights">© 2026 Gabriel Alexandre. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/gabriel-r%C3%AAgo-a630021ab/" target="_blank" class="footer-icon" title="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Snoopyzin" target="_blank" class="footer-icon" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
